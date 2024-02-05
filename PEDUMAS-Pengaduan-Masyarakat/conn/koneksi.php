@@ -1,1 +1,1 @@
-<?php $koneksi=mysqli_connect("localhost","root","","pengaduan_masyarakat"); ?>
+<?php $koneksi=mysqli_connect("localhost","root","","pedumas"); ?>

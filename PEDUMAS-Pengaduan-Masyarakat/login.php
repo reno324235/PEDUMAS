@@ -7,75 +7,40 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/latest/css/pro.min.css" integrity="..." crossorigin="anonymous">
     <style>
-        body {
-            background-color: #f4f4f4;
-            font-family: 'Arial', sans-serif;
-        }
+        .btn-color{
+  background-color: #0e1c36;
+  color: #fff;
+  
+}
 
-        .card {
-            background-color: #fff;
-            padding: 20px;
-            width: 40%;
-            margin: 0 auto;
-            margin-top: 10%;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+.profile-image-pic{
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
 
-        h3 {
-            text-align: center;
-            color: #3498db;
-        }
 
-        form {
-            margin-top: 20px;
-        }
 
-        .input_field {
-            margin-bottom: 15px;
-        }
+.cardbody-color{
+  background-color: #ebf2fa;
+}
 
-        label {
-            display: block;
-            margin-bottom: 5px;
-            color: #333;
-        }
-
-        input[type="text"],
-        input[type="password"] {
-            width: 100%;
-            height: 40px;
-            padding: 8px;
-            border-radius: 4px;
-            border: 1px solid #ccc;
-        }
-
-        input[type="submit"] {
-            width: 100%;
-            padding: 100%;
-            background-color: #27ae60;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #218c54;
-        }
-
-        .error-message {
-            color: #e74c3c;
-            margin-top: 10px;
-        }
+a{
+  text-decoration: none;
+}
     </style>
 </head>
 <body>
-    <div class="card">
-        <h3 class="display-4 text-center mb-4" style="color: #3498db; font-family: 'Arial', sans-serif;">
-            <i class="fal fa-sign-in-alt"></i> Login
-        </h3>
-        <form method="POST">
+<div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="card my-5">
+
+        <form method="POST" class="card-body cardbody-color p-lg-5">
+        <div class="text-center">
+              <img src="https://cdn.pixabay.com/photo/2016/03/31/19/56/avatar-1295397__340.png" class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3"
+                width="200px" alt="profile">
+            </div>
+
             <div class="mb-3 input_field">
                 <label for="username" class="form-label">
                     <i class="fal fa-user"></i> Username
@@ -88,9 +53,7 @@
                 </label>
                 <input id="password" type="password" name="password" class="form-control" required>
             </div>
-            <button type="submit" name="login" class="btn btn-success">
-                <i class="fal fa-sign-in-alt"></i> Login
-            </button>
+            <button type="submit" name="login"class="btn btn-color px-5 mb-5 w-100">Login</button>
         </form>
          <?php 
 	if(isset($_POST['login'])){
