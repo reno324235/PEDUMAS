@@ -45,7 +45,7 @@
 
     </head>
 
-    <body>
+    <body style="background:url(../img/bg4.jpg); background-size: cover;">
 
 	<div class="row">
         <div class="col-12 col-md-3">
