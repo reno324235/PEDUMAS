@@ -1,6 +1,6 @@
         <div class="row">
           <div class="col s12 m9">
-            <h4 class="blue-text">Pengaduan</h4>
+            <h4 class="white-text">Pengaduan</h4>
           </div>
         </div>
 
@@ -79,7 +79,7 @@
 				}
 			 ?>
           </div>
-          <div class="modal-footer col s12">
+		  <div class="modal-footer col s12">
 		  <a href="#!" class="modal-close waves-effect waves-green btn btn-secondary">Close</a>
           </div>
         </div>

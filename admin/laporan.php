@@ -1,6 +1,6 @@
         <div class="row">
           <div class="col s12 m9">
-            <h3 class="blue-text">Laporan</h3>
+            <h3 class="white-text">Laporan</h3>
           </div> 
           <div class="col s12 m3">
             <div class="section"></div>
@@ -62,7 +62,7 @@
             </div>
 			<div class="modal-footer">
 		  <a href="#!" class="modal-close waves-effect waves-green btn btn-secondary ">Close</a>
-          </div>
+          </div>s
           </div>
           
         </div>

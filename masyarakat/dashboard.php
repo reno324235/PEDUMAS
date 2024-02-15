@@ -63,7 +63,7 @@
           </div>
           <div class="modal-footer col s12">
     <a href="#!" class="modal-close waves-effect waves-green btn btn-secondary">Close</a>
-</div>
+		</div>
         </div>
 <!-- ditanggapi -->
 

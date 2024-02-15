@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Qn/TzcLZF5qJeRz3y6kjU5O9TzC1Lu9ubjwu5e6cqrnSo7pTkPnSBfPj40qW4F6t1fy+YhVQ7KfCWaS7jWVlgQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title><i class="fas fa-home"></i> Halaman Utama</title>
+  <title> Halaman Utama</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/latest/css/pro.min.css" integrity="..." crossorigin="anonymous">
   <style>
@@ -56,8 +56,14 @@
             <input id="password" type="password" name="password" class="form-control" required>
           </div>
           <button type="submit" name="login" class="btn btn-color px-5 mb-5 w-100">Login</button>
+          <div style="display: flex; align-items: center;">
+            <a href="registrasi.php" style="text-decoration: none; color: inherit; margin-right: 10px;">Tidak punya akun? Silahkan registrasi.</a>
+          </div>
+
+
         </form>
         <?php
+        include "conn/koneksi.php";
         if (isset($_POST['login'])) {
           $username = mysqli_real_escape_string($koneksi, $_POST['username']);
           $password = mysqli_real_escape_string($koneksi, md5($_POST['password']));
